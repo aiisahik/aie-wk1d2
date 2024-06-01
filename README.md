@@ -5,14 +5,17 @@
 for the system / prompt template, we either used the basic version or the engineered version. 
 
 #### Basic Version 
+```
 system_template = """\
 You are a helpful assistant.
 """
 user_template = """
 {input}
 """
+```
 
 #### Engineered Version 
+```
 system_template = """\
 You are a helpful assistant specializing in tricky mental and logical problems.
 """
@@ -26,6 +29,7 @@ Think through things step by step before giving the final answer.
 You will be penalized if you fail to do all of the above.
 I'm going to tip $100 for a better solution!
 """
+```
 
 We tested both of the templates on 5 different questions: 
 1. """Billy wants to get home from San Fran. before 7PM EDT. It's currently 1PM local time. Billy can either fly (3hrs), and then take a bus (2hrs), or Billy can take the teleporter (0hrs) and then a bus (1hrs). Does it matter which travel option Billy selects?"""
